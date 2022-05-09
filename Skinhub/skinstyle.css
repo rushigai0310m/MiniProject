@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-family: 'Gotham-Bold';
+}
+
+.logo img
+{
+    margin-bottom: 20px;
+}
+
+.navbar-toggle
+{
+    background-color: transparent;
+    margin-top: -25px;
+}
+
+.icon-bar
+{
+    background-color: #57e5f2;
+}
+
+.nav a 
+{
+    margin-right: 10px;
+/*    margin-left: 30px;*/
+    color: black;
+    font-size: 22px;
+    font-family: 'Berlin Sans FB';
+}
+
+.nav a:hover
+{
+    color: skyblue;
+    transition: 0.3s;
+}
+
+.medialinks a
+{
+    padding: -40px;
+}
+
+.fa:hover
+{
+    color: red;
+}
+
+
+
+.banner 
+{
+    height: 580px;
+}
+
+.bannertxt
+{
+    margin-top: -390px;
+    width: 200px;
+    font-size: 100px;
+    margin-left: 100px;
+    color: #96e7ff;
+    opacity: 0.4;
+}
+
+.bannertxt1
+{
+    margin-top: -390px;
+    width: 200px;
+    font-size: 100px;
+    margin-left: 100px;
+    color: transparent;
+    opacity: 0.4;
+}
+
+
+
+.bnrp 
+{
+    color: white;
+    margin-left: 40px;
+    font-size: 25px;
+    
+}
+
+.bannercnt 
+{
+    margin-left: 550px;
+    border-radius: 20px;
+    margin-top: -450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) 
+{ 
+    .bannertxt
+    {
+        display: none;
+    }
+/*    .bannertxt1
+    {
+        margin-top: -390px;
+        width: 200px;
+        font-size: 100px;
+        margin-left: 100px;
+        color: #96e7ff;
+        opacity: 0.4;
+    }*/
+
+ }
+
+
+/*@media only screen and (max-width: 768px)
+{
+
+
+}*/

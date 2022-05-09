@@ -1,0 +1,726 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-family: 'Gotham-Bold';
+}
+
+.logo img
+{
+    margin-bottom: 20px;
+}
+
+.navbar-toggle
+{
+    background-color: transparent;
+    margin-top: -25px;
+}
+
+.icon-bar
+{
+    background-color: #57e5f2;
+}
+
+.nav a 
+{
+    margin-right: -10px;
+    margin-left: 30px;
+    color: black;
+    font-size: 22px;
+    font-family: 'Berlin Sans FB';
+}
+
+.nav a:hover
+{
+    color: skyblue;
+    transition: 0.3s;
+}
+
+.medialinks a
+{
+    padding: -40px;
+}
+
+.fa:hover
+{
+    color: red;
+}
+
+.ap 
+{
+    width: 1px;
+}
+
+.allcont
+{
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+.fontclass
+{
+    font-size: 60px;
+    color: #86bc42;
+}
+
+
+.filter 
+{
+    padding: 10px;
+    color: #d5d5d5;
+    border-color: #d5d5d5;
+    width: 300px;
+}
+
+.fil 
+{
+    padding-top: 30px;
+}
+.cards 
+{
+    padding-top: 20px;
+}
+.cardimg
+{
+    /*width: 100%;
+    height: 350px;*/
+    vertical-align: middle;
+}
+
+.cardtext 
+{
+    margin-top: -145px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 75px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext1 
+{
+    margin-top: -145px;
+    margin-left: 60px;
+    color: #ee9c26;
+    text-align: center;
+    width: 100px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext2 
+{
+    margin-top: -130px;
+    margin-left: 60px;
+    color: #ee9c26;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext3
+{
+    margin-top: -120px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext4
+{
+    margin-top: -145px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext5
+{
+    margin-top: -120px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+.cardtext6
+{
+    margin-top: -120px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext7
+{
+    margin-top: -120px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext8
+{
+    margin-top: -120px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.cardtext9
+{
+    margin-top: -145px;
+    margin-left: 50px;
+    color: #ee9c26;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+
+
+
+.cardbtn 
+{
+    margin-left: 33px;
+    width: 50px;
+    color: #86bc42;
+    border-color: #86bc42;
+    border-radius: 15px;
+}
+
+.cardbtn1
+{
+    color: #86bc42;
+    border-color: #86bc42;
+    border-radius: 15px;
+}
+.cardbtn1:hover
+{
+    background-color: #86bc42;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.cardbtn:hover
+{
+    background-color: #86bc42;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+.showbtn 
+{
+    margin-top: 50px;
+    width: 200px;
+    margin-left: 650px;
+    border-radius:20px;
+    padding: 20px;
+    background-color: transparent;
+    color: #86bc42;
+    font-size: 18px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid #86bc42;
+
+}
+
+.showbtn:hover
+{
+    background-color: #86bc42;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.news 
+{
+    margin-top: -30px;
+}
+
+
+.newsmail
+{
+    margin-top: -120px;
+
+}
+
+.nmail 
+{
+        width: 500px;
+        height: 60px;
+        margin-left: 750px;
+        border:  1px solid #dadada;
+        box-shadow: 8px 4px 10px rgb(0 0 0 / 20%);
+        border-radius: 30px;
+        font-size: 20px;
+        padding-left: 30px;
+}
+
+.subarrow
+{
+    margin-left: -70px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.scribe 
+{
+    margin-top: -135px;
+    margin-left: 155px;
+}
+
+.subtext
+{
+    font-family: 'Gotham-Bold';
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+
+
+.navsite
+{
+    padding: 70px;
+        background-image: url(cloud.png);
+    margin: 0px 0px 0px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.navsite a 
+{
+    padding: 30px;
+    font-size: 25px;
+    color: #6f6f6f;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navsite a:hover
+{
+    color: #86bc42;
+    transition: 0.3s;
+}
+
+.footerlist
+{
+    list-style: none;
+    text-decoration: none;
+    background-color: #f4f6fa;
+    padding-bottom: 200px;
+}
+
+.footerlist a 
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 60px;
+    font-size: 20px;
+
+}
+
+.footerh
+{
+    padding-left: 60px;
+}
+
+.footerlist a:hover
+{
+    color: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .allproducts
+    {
+        display: none;
+    }
+    .resppro img
+    {
+        width: 800px;
+    }
+    .fontclass
+    {
+    font-size: 30px;
+    color: #86bc42;
+    }
+
+    .cardtext 
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.cardtext1 
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.cardtext2 
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+
+.cardtext3
+{
+    margin-top: -170px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.cardtext4
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.cardtext5
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    padding-bottom: 35px;
+    font-size: 25px;
+}
+
+
+.cardtext6
+{
+    margin-top: -170px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.cardtext7
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+
+.cardtext8
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.cardtext9
+{
+    margin-top: -180px;
+    margin-left: 70px;
+    color: #ee9c26;
+    text-align: center;
+    width: 150px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+
+
+
+.cardbtn 
+{
+    margin-left: 33px;
+    width: 70px;
+    color: #86bc42;
+    border-color: #86bc42;
+    border-radius: 15px;
+}
+
+.cardbtn1
+{
+    color: #86bc42;
+    margin-left: 40px;
+    width: 120px;
+    border-color: #86bc42;
+    border-radius: 15px;
+}
+
+
+
+
+
+    .hideletter
+    {
+        width: 420px;
+        height: 150px;
+    }
+
+    .afterres
+    {
+        height: 170px;
+    }
+
+    .newsmail
+    {
+        width: 150px;
+        margin-left: -400px;
+    }
+
+    .nmail
+    {
+        height: 40px;
+        margin-left: 380px;
+        margin-top: 40px;
+        width: 330px;
+    }
+
+    .subtext
+    {
+
+        position: fixed;
+    }
+
+
+    .navsite
+    {
+/*        width: 30px;*/
+    width: 290px;
+    font-size: 90px;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 0px;
+    }
+
+    .navsite a 
+    {
+        font-size: 10px;
+        padding: 0px;
+    }
+
+
+    .navsite a:hover
+    {
+    color: #86bc42;
+    transition: 0.3s;
+    }
+
+
+    .showbtn
+    {
+        margin-right: px;
+        margin-left: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

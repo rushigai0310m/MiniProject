@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EverYouth</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+  <script type="text/javascript" src="animate.js"></script> 
+<script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").toggle("slow");  
+    });
+    // $("#top").click(function(){  
+    //     $("#panel").slideDown("slow");  
+    // });
+
+}); 
+
+$(document).ready(function(){  
+    $("#flip1").click(function(){  
+        $("#panel1").slideToggle("slow");  
+    }) 
+
+});
+
+$(document).ready(function(){  
+    $("#faqq").click(function(){  
+        $("#panel2").slideDown("slow");  
+    })
+    $("#faqq").dblclick(function(){  
+        $("#panel2").slideUp("slow");  
+    })  
+});
+
+
+
+// Accordian Action
+
+var action = 'click';
+
+var speed = "500";
+
+
+
+
+
+$(document).ready(function(){
+
+
+
+// Question handler
+
+  $('li.q').on(action, function(){
+
+
+
+    // gets next element
+
+    // opens .a of selected question
+
+    $(this).next().slideToggle(speed)
+
+    
+
+    // selects all other answers and slides up any open answer
+
+    .siblings('li.a').slideUp();
+
+  
+
+    // Grab img from clicked question
+
+    var img = $(this).children('img');
+
+
+
+    // remove Rotate class from all images except the active
+
+    $('img').not(img).removeClass('rotate');
+
+
+
+    // toggle rotate class
+
+    img.toggleClass('rotate');
+
+
+
+  });
+
+
+
+});
+
+
+
+</script>
+
+<script src="ever.js"></script>
+  <link rel="stylesheet" type="text/css" href="ever.css">
+</head>
+<body>
+
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="header">
+				
+			<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <div class="navbar-header" style="padding: 10px;">
+				      <a class="navbar-brand" href="#">
+				        <img alt="Brand" src="logo.png" width="11%" style="margin-top: -20px;margin-left: 90px;position: fixed;">
+				      </a>
+						      <div class="links">
+								      <a href="#">Products</a>
+								      <a href="#">Skin Hub</a>
+								      <a href="#">Know Your Skin</a>
+						      </div>
+
+</div>
+				  </div>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+ -->
+
+
+ <div class="container-fluid">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+  	<nav class="navbar navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<a class="navbar-brand" href="#"><img src="logo.png" width="11%" style="margin-top: 25px;padding: 0px;position: auto;"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Products/products.html">PRODUCTS</a></li>
+        <li><a href="Skinhub/skin.html">SKINHUB</a></li>
+        <li><a href="#">KNOW YOUR SKIN</a></li>
+        <li><a href="#" style="color: skyblue;"><i class="fa fa-shopping-cart" style="margin-right: 10px;color: skyblue;"></i>BUY ONLINE</a></li>
+        <li><a href="#" style="color:#c4c4c4;"><i class="fa fa-facebook-f"></i></a></li>
+        <li><a href="#" style="color:#c4c4c4;" ><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" style="color:#c4c4c4;"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" style="color:#c4c4c4;"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#" style="color:skyblue;"><i class="fa fa-search"></i></a></li>
+        
+</ul>
+      
+
+    </div><!-- /.navbar-collapse -->
+    </nav>
+    </div>
+    </div>
+  </div><!-- /.container-fluid -->
+<!-- </nav> -->
+
+
+			<div class="container-fluid slide" style="background-color:#fcedc2;">
+				<div class="row">
+					<div class="col-lg-12">
+					 
+					 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="youth2.png" alt="...">
+      <div class="carousel-caption scrollD">
+        <img src="scroll-down.png">
+      </div>
+    </div>
+    <div class="item">
+      <img src="youth3.jpg" alt="...">
+      <div class="carousel-caption scrollD">
+        <img src="scroll-down.png">
+      </div>
+    </div>
+    <div class="item">
+      <img src="youth4.jpg" alt="...">
+      <div class="carousel-caption scrollD">
+        <img src="scroll-down.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+					<div class="container-fluid maingri" style="padding-top:20px;background-color: #fcedc2">
+ 										<div class="row">
+ 											<div class="col-lg-12">
+ 												<div class="skinproduct text-center">
+ 													<h2 class="text-center">Everyuth Skincare Products</h2>
+ 												</div>
+<!--  												<div class="abo" id="panel">Zydus Wellness Ltd. Offers a range of skin care products under the brand name of Everyuth Naturals. Everyuth enjoys market leadership in skincare segments like face masks and scrubs and has a strong position in the face wash segment as well.</div> -->
+ 												<!-- <img src="leaves.png" class="lea" width="8%" style="margin-top: -80px;margin-left: 470px;"> -->
+ 											</div>
+ 										</div>
+ 							</div>
+
+ 							<div class="container-fluid" style="padding-top: 30px;background-color: #fcedc2">
+ 								<div class="row">
+ 									<div class="col-lg-3 Timg">
+					      
+					        <p><img src="gri1.jpg" width="92%" style="margin-left:80px" class="img-responsive" alt="Responsive image"></p>
+					      </div>
+					    
+					    <div class="col-lg-3 Timg">
+
+					        <p><img src="gri2.png" width="90%" style="margin-left: 60px;" class="img-responsive" alt="Responsive image"></p>
+					    					    </div>
+					    
+					    <div class="col-lg-6 Timg">
+					        <p><img src="gri3.png" style="margin-left:30px" width="90%" class="img-responsive" alt="Responsive image"></p>
+					    </div>
+ 								</div>
+ 								<div class="row">
+ 									<div class="col-lg-4 Timg">
+										<p><img src="gri4.jpg" width="67.8%" style="margin-top:-280px;margin-left:80px" class="img-responsive" alt="Responsive image"></p></div>
+					    
+								    <div class="col-lg-2 Timg">
+
+								        <p><!-- <img src="gri6.png" width="100%" style="margin-top:20px" class="img-responsive" alt="Responsive image"> --></p>
+								     		</div>
+					    
+					    <div class="col-lg-6 Timg">
+					        <p><img src="gri5.jpg" style="margin-top: -280px;margin-left: 30px;" width="90%" class="img-responsive" alt="Responsive image"></p>
+					    </div>
+ 								</div>
+
+						 							<div class="row">
+						 									<div class="col-lg-3 Timg">
+											        <p><!-- <img src="gri7.jpg" class="img-responsive" alt="Responsive image"> --></p>
+											    		</div>
+											    
+													    <div class="col-lg-6 Timg">
+													        <p><img src="gri6.png" width="90%" style="margin-left:50px;margin-top: -280px;" class="img-responsive" alt="Responsive image"></p>
+													    </div>
+													    
+													    <div class="col-lg-3 Timg">
+													        <p><img src="gri7.jpg" width="96%" style="margin-top:-280px;margin-left:-29px" class="img-responsive" alt="Responsive image"></p>
+													    </div>
+ 								</div>
+ </div>
+</div>
+<div class="container-fluid Resp" style="background-color: #fcedc2;padding-bottom: 30px">
+	<div class="row">
+		<div class="col-lg-4 Resimg">
+		<p><img src="hide01.jpg"class="img-responsive tan" alt="Responsive image">	
+		</div>
+		<div class="col-lg-4 Resimg">
+		<p><img src="hide1.png"class="img-responsive tulsi" alt="Responsive image">	
+
+		</div>
+		<div class="col-lg-4 Resimg">
+		<p><img src="hide2.png"class="img-responsive walnut" alt="Responsive image">	
+
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row more">
+		<div>
+	<h1><b>More Products <a style="color:skyblue;"><i class="fa fa-plus plus" id="flip"></i></a></b></h1>
+	<div class="abo" id="panel" style="display:none">
+		<li>Walnut Apricot Scrub</li>
+		<li>Golden Glow Peel Off Mask</li>
+		<li>Cucumber Face Pack</li>
+		<li>Orange Peel Off Mask</li>
+		<li>Tulsi Turmeric Face Wash</li>
+		<li>Fruit Face Wash</li>
+		<li>Neem Face Wash</li>
+		<li>Walnut Scrub</li>
+
+	</div>
+ 										
+</div>
+	</div>
+</div>
+
+		<div class="container-fluid skyb" style="padding-bottom: 50px;">
+			<div class="row">
+				<!-- <div class="col-lg-12 tre">
+
+				</div> -->
+			<div class="tren">
+				<img src="le1.png" class="img-responsive min" alt="Responsive image" width="50%">
+			</div>
+			<div class="col-lg-12">
+				<h1 class="t"><b>Trends</b></h1>
+			</div>
+				<div class="col-lg-2">
+					<img src="lm.png" class="img-responsive min1" alt="Responsive image">
+				</div>	
+			</div>
+
+			<!-- <div class="row">
+				<div class="col-lg-4">
+					<div class="cardstrend" width="100%" style="background-color:white;">
+						<img src="c1.jpg" width="50%" style="margin-top:-30px;">
+						<h4>A Natural Skincare Routine Is Incomplete Without This Body...</h4>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="main" style="margin-top:40px;">
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card" style="background-color:transparent;">
+        <div class="card_image"><img src="c11.png" width="75%" style="margin-left:50px"></div>
+        <div class="card_content">
+          <h2 class="card_title"><b>A Natural Skincare Routine Is Incomplete Without This Body...</b></h2>
+			          <p class="card_text">
+			With the gradual fall in temperature and<br>sweater weather slowly approaching us, it<br>is time to flaunt aou winter wardrobe.But<br>dry skin always tends...</p>
+         <h4>By <a href="#">EVERYUTH</a></h4>
+        </div>
+        
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card" style="background-color:transparent;">
+        <div class="card_image"><img src="c22.png" width="75%" style="margin-left:50px"></div>
+        <div class="card_content">
+          <h2 class="card_title"><b>
+					Go Blemish-Free with These Natural Skincare Products</b></h2>
+          <p class="card_text">
+					Natural skin care products have been <br> around in the beauty industry for more<br> than centuries. Our ancestors have been<br>making use of humble kitchen...<br></p>
+					<h4>By <a href="#">EVERYUTH</a></h4>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card" style="background-color:transparent;">
+        <div class="card_image"><img src="cirm.png" width="65%" style="margin-left:50px" ></div><br>
+        <div class="card_content">
+          <h2 class="card_title"><b>
+					The Exfoliating Walnut Scrub Is the Answer To Your Skin Woes</b></h2>
+          <p class="card_text">Exfoliation is one of the most touted <br> skincare steps that many experts swear by.<br>Our skin regenerates regularly and in the <br> process leaves behind...
+					</p>
+          <h4>By <a href="#">EVERYUTH</a></h4>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <a class="btn showbtn" role="button" id="flip1">Show More</a>
+  												<div class="abo" id="panel1" style="display:none">Zydus Wellness Ltd. Offers a range of skin care products under the brand name of Everyuth Naturals. Everyuth enjoys market leadership in skincare segments like face masks and scrubs and has a strong position in the face wash segment as well.</div>
+ 												<!-- <img src="leaves.png" class="lea" width="8%" style="margin-top: -80px;margin-left: 470px;"> -->
+ 											</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<p class="rt"><b>Trends</b></p>
+			</div>
+			<img src="lm.png" class="img-responsive lmm" alt="Responsive image">
+		</div>
+		
+
+
+		<div class="container-fluid news">
+			<div class="row p1">
+			<img src="news1.png" class="img-responsive afterres" alt="Responsive image">
+			</div>
+			<div class="col-lg-12 newsmail">
+				<input type="email" class="nmail" name="newsletteremail" placeholder="Your Email">
+				<button name="submit" type="submit" class="subarrow"><img src="sarrow.png"></button>
+			</div>
+			<div class="row">
+				<div class="scribe">
+					<h1 class="subtext">Subscribe<span style="color: #73c52c;"><b> Newsletter</b> </span></h1>
+				</div>
+			</div>
+
+<div class="container-fluid navsite">
+	<div class="row">
+		<div class="col-lg-12"> 
+			<nav>
+		  <a href="#">SITEMAP</a> 
+		  <a href="#">ABOUT US</a> 
+		  <a href="#">GET  IN TOUCH</a>
+		  <a href="#">PRIVACY POLICY</a>
+		  <a id="faqq">FAQS</a> 
+		  <ul class="faq" id="panel2">
+
+
+
+  <li class="q">
+
+    <img src="faq.png" width="3%"> 
+
+    What is the best treatment for Oily Skin?
+
+  </li>
+
+  <li class="a">
+	The best way to care for an oily skin is regularly following the cleansing, toning &amp; moisturizing routine. Cleansing ensures that the skin is clean &amp; free of impurities. Use a mild, alcohol-free toner to remove impurities that your cleanser may have missed.
+	A light oil-free moisturizer helps keep your skin supple. Exfoliate once a week to prevent your skin pores from clogging. Facial masks can be used once a fortnight for soaking up excessive oil. 	
+
+	<div class="row pack hover01">
+		<div class="col-lg-3">
+			<figure><img src="oilyimg.png" width="65%" class="img-responsive" alt="Responsive image"></figure>
+		</div>
+		<div class="col-lg-3">
+			<figure><img src="oc1.png" width="150%" class="img-responsive oc" alt="Responsive image"></figure>
+		</div>
+		<div class="col-lg-3">
+			<figure><img src="oilyimg.png" width="65%" class="img-responsive" alt="Responsive image"></figure>
+		</div>
+		<div class="col-lg-3">
+			<figure><img src="oc1.png" width="150%" class="img-responsive oc" alt="Responsive image"></figure>
+		</div>
+	</div>
+
+	<!-- <img src="oilyimg.png" width="15%" class="img-responsive" alt="Responsive image"> --></li>
+
+  	
+
+  <li class="q">
+
+    <img src="faq.png" width="3%"> 
+
+    Is a walnut scrub good for oily skin?
+
+  </li>
+
+  <li class="a">good exfoliating face scrub helps clear away the dead skin cells and keep excess oil secretion in control. The  by Everyuth Naturals is filled with the goodness of Vitamin E and walnut shell which makes your skin smoother and gets rid of dead skin.</li>
+
+
+
+  <li class="q">
+
+    <img src="faq.png" width="3%"> 
+
+    Which is the best face pack for oily skin?
+
+  </li>
+
+  <li class="a">
+	Oily skin can be a nightmare if not taken care of. Excess oil secretion clogs your pores with bacteria and dirt. One of the  - Everyuth's Neem Face Pack is the perfect solution to cleanse your skin and give you a clear complexion.</li>
+
+
+
+</ul>
+
+		</nav>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid footerlist" style="background-color: #f4f6fa;">
+	<div class="row">
+		<div class="col-lg-3">
+			<h3 class="footerh">CATEGORY</h3>
+			<li><a href="#">Scrub</a></li>
+			<li><a href="#">Peel Off Mask</a></li>
+			<li><a href="#">Face Wash</a></li>
+			<li><a href="#">Tan Removal</a></li>
+			<li><a href="#">Face Pack & Home Facial</a></li>
+			<li><a href="#">Sun Block</a></li>
+			<li><a href="#">Aloevera Cucumber Gel</a></li>
+			<li><a href="#">Body Lotion</a></li>
+		</div>
+		<div class="col-lg-2">
+			<h3 class="footerh">BENEFIT</h3>
+			<li><a href="#">Oily Skin</a></li>
+			<li><a href="#">Rejuvenation</a></li>
+			<li><a href="#">Anti-Acne</a></li>
+			<li><a href="#">Dry Skin</a></li>
+			<li><a href="#">Exfoliation</a></li>
+			<li><a href="#">Dull Skin</a></li>
+			<li><a href="#">Purifying</a></li>
+		</div>
+		<div class="col-lg-2">
+			<h3 class="footerh">SKIN CARE</h3>
+			<li><a href="#">Tvcs</a></li>
+			<li><a href="#">Blogs</a></li>
+			<li><a href="#">Know Your Skin</a></li>
+		</div>
+		<div class="col-lg-2">
+			<h3 class="footerh">OTHERS</h3>
+			<li><a href="#">Sitemap</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Faqs</a></li>
+			<li><a href="#">Get In Touch</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</div>
+		<div class="col-lg-3">
+			<h3 class="footerh">FOLLOW US</h3>
+			<a href="#"><i class="fa fa-facebook-f"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+		</div>
+
+	</div>
+</div>
+
+
+		
+
+
+
+</body>
+</html>
